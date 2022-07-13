@@ -1,4 +1,22 @@
 
+// Definimos una variable con el nombre del usuario
+
+let entrada = prompt("Ingrese su nombre por favor... (debe ser parte del grupo familiar)");
+
+// Creamos un array con los miembros de la familia
+
+const familia = ["karina", "mauro", "franco", "pablo", "choco"];
+
+// Armamos un while para comprobar que el nombre del usuario coincida con alguna persona de la familia
+
+while(familia.includes(entrada) == false){
+    console.log("No eres un integrante de la familia");
+    entrada = prompt("Ingrese su nombre por favor... (debe ser parte del grupo familiar)");
+}
+
+console.log("Bienvenid@ " + entrada + " !!");
+
+
 // Asignamos las dos variables principales interactuando con el usuario
 
 let monto = parseInt(prompt("Ingrese el monto de la operación"));
